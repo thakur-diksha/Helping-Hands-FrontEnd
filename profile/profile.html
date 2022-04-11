@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="profile-outer">
+        <div class="profile" id="profile">
+            <div class="profile-left">
+                <ion-icon name="person-circle-outline" class="profile-icon"></ion-icon>
+                <div class="acc-username">username</div>
+                <div class="acc-email">dakshinasingh@gmail.com</div>
+                <div class="acc-update">
+                   <span onclick="fetchData()">
+                        <ion-icon name="analytics-outline" class="acc-icon"></ion-icon>
+                        <div class="dashboard acc">Dashboard</div>
+                   </span>
+                    <span onclick="password()">
+                        <ion-icon name="key-outline" class="acc-icon"></ion-icon>
+                        <div class="change-pass acc">Change Password</div>
+                    </span>
+                    <span>
+                        <ion-icon name="log-out-outline" class="acc-icon"></ion-icon>
+                        <div class="logout acc">Log Out</div>
+                    </span>
+                </div>
+            </div>
+            <div class="profile-right">
+                <div class="pass-error">
+                    error msg
+                </div>
+                <div class="donate-dashboard" id="donate-dashboard"></div>
+                <div class="volunteer-dashboard" id="volunteer-dashboard"></div>
+
+                <div class="pass-board" id="pass-board">
+                    <form id="pass-ch" onsubmit="valChangePass()">
+                        <h2>Change password</h2>
+                        <div><label class="pass-text">Old password</label></div>
+                        <div><input type="password" class="ch-pass" id="acc-old-pass" required></div>
+                        <div><label class="pass-text">New password</label> </div>
+                        <div><input type="password" class="ch-pass" id="acc-pass" required></div>
+                        <div><label class="pass-text">Confirm new password</label></div>
+                        <div><input type="password" class="ch-pass" id="acc-cpass" required></div>
+                        <input type="submit" Value="Update Password" class="change-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

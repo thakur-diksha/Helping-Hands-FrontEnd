@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping Hands</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/9a416a1cca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home-admin.css">
+</head>
+<body>
+    
+    <div class="home-admin" id="admin-home">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-solid fa-angle-right" id="btn"></i>
+            <i class="fas fa-solid fa-angle-left" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.php">
+                    <ion-icon name="home" class="admin-icon"></ion-icon>
+                    <span>Home</span>
+                </a></li>
+                <li><a href="#" onclick="fetchVData()">
+                    <ion-icon name="hand-right" class="admin-icon"></ion-icon>
+                    <span>Volunteers</span>
+                </a></li>
+                <li><a href="#" onclick="fetchDData()">
+                    <i class="fa fa-heartbeat" aria-hidden="true" class="admin-icon"></i>
+                    <span>Donors</span>
+                </a></li>
+                <li><a href="#" onclick="adPassword()">
+                    <ion-icon name="key" class="admin-icon"></ion-icon>
+                    <span>Change password</span>
+                </a></li>
+                <li><a href="#">
+                    <ion-icon name="log-out" class="admin-icon"></ion-icon>
+                    <span>Log Out</span>
+                 </a></li>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <div class="ad-msg" id="ad-msg">Hi admin!</div>
+            <div class="ad-pass-board" id="ad-pass-board">
+                <form id="ad-pass-ch" onsubmit="valChangePass()">
+                    <h2>Change password</h2>
+                    <div><label class="pass-text">Old password</label></div>
+                    <div><input type="password" class="ch-pass" id="acc-old-pass" required></div>
+                    <div><label class="pass-text">New password</label> </div>
+                    <div><input type="password" class="ch-pass" id="acc-pass" required></div>
+                    <div><label class="pass-text">Confirm new password</label></div>
+                    <div><input type="password" class="ch-pass" id="acc-cpass" required></div>
+                    <input type="submit" Value="Update Password" class="change-btn">
+                </form>
+            </div>
+
+            <div id="ad-donor-data"></div>
+            <div id="ad-volunteer-data"></div>
+        </div>
+    </div>
+</body>
+
+    <script src="home-admin.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

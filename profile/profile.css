@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200;300&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    list-style-type:none;
+}
+
+body{
+    background:white;
+    /* box-sizing:border-box; */
+    min-height:100vh;
+    align-items:center;
+    justify-content:center;
+}
+
+/* ------------------------------------profile---------------------------------------------------------------------- */
+.profile-outer{
+    background-color: #f4f4f4;
+}
+
+.profile{
+    background-color: white;
+    height: 100vh;
+    margin: 0 150px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+#profile .profile-left{
+    background-color:#B1308A;
+    display: flex;
+    flex-direction: column;
+    padding-top:200px;
+    align-items: center;
+}
+#profile .profile-right{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-top: 110px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #donate-dashboard{
+    display:none;
+}
+#volunteer-dashboard{
+    display: none;
+} */
+
+#profile .pass-board{
+    display: none;
+}
+
+#profile .pass-board{
+    padding:0 10px;
+    margin:30px 20px;
+    width:100%;
+}
+
+#profile .pass-board h2{
+    font-weight:600;
+    font-size:26px;
+    margin:16px 0;
+    margin-bottom:30px;
+    color:#B1308A;
+}
+
+#profile .pass-text{
+    font-size:20px;
+    margin:20px 0;
+}
+
+#profile .ch-pass{
+    height:38px;
+    width:100%;
+    margin-bottom:15px;
+    margin-top:3px;
+    border-radius:4px;
+    padding:8px;
+    font-size:18px;
+}
+
+#profile .change-btn{
+    padding:7px 15px;
+    font-size:15px;
+    margin-top:12px;
+    background-color: #B1308A;
+    border:none;
+    color:#f4f4f4;
+    border-radius:5px;
+}
+
+#profile .change-btn:hover{
+    cursor:pointer;
+    background-color: #86366e;
+}
+
+#profile .profile-right .donate-dashboard{
+    margin: 10px;
+    height: 250px;
+    width: 100%;
+    border: 2px solid gray;
+}
+#profile .profile-right .volunteer-dashboard{
+    margin: 10px;
+    height: 250px;
+    width: 100%;
+    border: 2px solid gray;
+}
+#profile .profile-icon{
+    font-size:100px;
+    color: #f4f4f4;
+}
+#profile .acc-username{
+    font-size:30px;
+    font-weight: 500;
+    color: #f4f4f4;
+}
+#profile .acc-email{
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #f4f4f4;
+    color:#f4f4f4;
+}
+#profile .acc-update{
+    margin:10px;
+   
+}
+#profile .acc-update span{
+    display: flex;
+    font-size: 20px;
+    width: 100%;
+    padding: 5px;
+    margin: 4px;
+    background-color: #f4f4f4;
+}
+#profile .acc-update span:hover{
+    background-color:#cecbcb;
+    cursor: pointer;
+}
+#profile .acc-update span .acc-icon{
+    padding: 5px 10px;
+}
+#profile .pass-error{
+    color: red;
+    font-size: 18px;
+}
+@media(max-width:1150px){
+    #profile .profile-outer{
+        background-color:white;
+    }
+
+    .profile{
+        /* grid-template-columns:1fr; */
+        background-color:white;
+        display: block;
+    }
+
+    #profile .profile-right{
+        margin:10px;
+        background-color:white
+    }
+
+    #profile .profile-left{
+        margin:10px;
+        padding-top: 40px;
+        background-color:white;
+    }
+
+    #profile .profile-icon{
+        padding:0;
+        color:#000;
+    }
+
+    #profile .acc-username{
+        color:#000;
+    }
+
+    #profile .acc-email{
+        color:#000;
+    }
+    #profile .acc-update{
+        display: flex;
+    }
+    #profile .acc-update span{
+        height: 55px;
+        width: 60px;
+        font-size: 30px;
+    }
+    #profile .acc-update span div{
+        display: none;
+    }
+    #profile .profile-right .donate-dashboard{
+        height: 200px;
+    }
+    #profile .profile-right .volunteer-dashboard{
+        height: 200px;
+    }
+  }
+
+
+  /* @media(max-width:550px){
+    .profile{
+        margin: 0;
+    }
+  } */
+  @media(max-width:660px){
+    .profile{
+        padding:0;
+        margin:0;
+    }
+
+    #profile .profile-right{
+        
+        margin:0 20px;
+    }
+
+    #profile .pass-board{
+        margin:25px;
+        padding:0;
+    }
+
+    #profile .pass-board h2{
+        font-weight:500;
+        font-size:24px;
+    }
+
+    #profile .pass-text{
+        font-size:17px;
+    }
+
+    #profile .ch-pass{
+        height:32px;
+    }
+  }
+
+ @media(max-width:550px){
+    #profile .profile-right{
+        padding:0;
+        margin:0 20px;
+    }
+
+    #profile .change-btn{
+        padding:5px 12px;
+        font-size:12px;
+    }
+    #profile .profile-right .donate-dashboard{
+        height: 200px;
+    }
+    #profile .profile-right .volunteer-dashboard{
+        height: 200px;
+    }
+ }
+
+ @media(max-width:470px){
+    #profile .profile-left{
+         margin:0;
+     }
+     #profile .profile-right{
+         padding:10px;
+         margin:0 40px;
+     }
+ }

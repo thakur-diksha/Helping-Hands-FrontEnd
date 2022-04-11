@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Donation Form</title>
+</head>
+<body>
+    <!--------------------------------------------donation form--------------------------------------------------------------->
+    <div class="dform-container">
+        <div class="dform-left"></div>
+
+        <div class="dform-right">
+            <form class="d-form" id="d-form" action="" method="" >
+                <h2>Donation Form</h2>
+
+                <div class="tab"><label class="dtext" id="category">Select the item(s) you want to donate:</label>
+                    <div class="category">
+                        <div class="category-container">
+                            <div class="cat Stationary">
+                                <label><input type="checkbox" value="1" name="cb[]"><span>Stationary</span></label>
+                            </div>
+                            <div class="cat Toiletries">
+                                <label><input type="checkbox" value="2" name="cb[]"><span>Toiletries</span></label>
+                            </div>
+                            <div class="cat Clothing">
+                                <label><input type="checkbox" value="3" name="cb[]"><span>Clothing</span></label>
+                            </div>
+                            <div class="cat Food">
+                                <label><input type="checkbox" value="4" name="cb[]"><span>Food</span>
+                                </label>
+                            </div>
+                            <div class="cat Others">
+                                <label><input type="checkbox" value="5" name="cb[]"><span>Others</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+<!-- 
+                  <div class="tab name"><label class="dtext">Name:</label>
+                    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+                    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+                  </div> -->
+
+                  <div class="tab address"><label class="dtext">Address:</label>
+                    <p><input placeholder="Name of your Hostel..." oninput="this.className = ''" name="hostel"></p>
+                    <p><input type="number" placeholder="Your Room Number..." oninput="this.className = ''" name="room"></p>
+                  </div>
+
+                  <div class="tab contact"><label class="dtext">Contact info:</label>
+                    <!-- <p><input id="email" placeholder="E-mail(e.g.-btbti19037_diksha@banasthali.in)" oninput="this.className = ''" name="email" type="email"></p> -->
+                    <p><input type="number" id="phone" placeholder="Phone(10 digit number)" oninput="this.className = ''" name="ph"></p>
+                  </div>
+                  
+                  <div style="overflow:auto;">
+                    <div style="float:right;">
+                      <button type="button" id="prevBtn" onclick="dnextPrev(-1)">Previous</button>
+                      <button type="button" id="nextBtn" onclick="validateCB()">Next</button>
+                    </div>
+                  </div>
+                  
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <!-- <span class="step"></span> -->
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

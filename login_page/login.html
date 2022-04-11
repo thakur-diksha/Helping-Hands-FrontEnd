@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <!-- -----------------------------------login page-------------------------------------- -->
+        <div class="login-page" id="login-page">
+            <div class="head">
+                <div class="head1">
+                    <button onclick="loginform()">LOGIN</button>
+                    <div class="head-line" id="login-line"></div>
+                </div>
+                <div class="head2">
+                    <button onclick="signupform()">SIGNUP</button>
+                    <div class="head-line" id="signup-line"></div>
+                </div>
+            </div>
+    
+            <div id="login-box">
+                <form action="" name="login-form" id="login" onsubmit="validateLogin()">
+                    <div class="label">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="email" name="email" value="" placeholder="e.g.-btbti19037_diksha@banasthali.in" required>
+                    </div>
+                    <div class="label">
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="password" name="password" value="" placeholder="6-9 characters long..." required>
+                    </div>
+                    <div>
+                        <input class="submit" type="submit" value="Log In">
+                    </div>
+                </form>
+            </div>
+            <div id="signup-box">
+                <form action="" name="signup-form" id="signup" onsubmit="validateSignup()">
+                    <div class="label">
+                        <label for="fname">Firstname:</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="fname" name="fname" placeholder="Your First Name..." required>
+                    </div>
+                    <div class="label">
+                        <label for="lname">Lastname:</label>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="lname" name="lname" placeholder="Your Last Name..." required>
+                    </div>
+                    <div class="label">
+                        <label for="email">Email:</label>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="mail" name="email" value="" placeholder="e.g.-btbti19037_diksha@banasthali.in" required>
+                    </div>
+                    <div class="label">
+                        <label for="password">Password:</label>
+                    </div>
+                    <div class="input">
+                        <input type="password" id="pass" name="password" value="" placeholder="6-9 characters long..." required>
+                    </div>
+                    <div>
+                        <input class="submit" type="submit" value="Sign Up">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

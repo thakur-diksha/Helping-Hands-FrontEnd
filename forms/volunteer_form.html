@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Volunteer Form</title>
+</head>
+<body>
+    <!--------------------------------------------volunteer form--------------------------------------------------------------->
+    <div class="vform-container">
+        <div class="vform-left"></div>
+
+        <div class="vform-right">
+            <form class="v-form" id="v-form" action="" method="" >
+                <h2>Volunteer Form</h2>
+
+                <div class="tab"><label class="vtext">Choose Task:</label>
+                    <p><select class="options"></p>
+                        <option class="option" value="0" oninput="this.className = ''" name="task">--Choose a task to volunteer--</option>
+                        <option class="option" value="teach" oninput="this.className = ''" name="task">Teach the local village kids</option>
+                        <option class="option" value="distribute" oninput="this.className = ''" name="task">Help in distributing the donated goods</option>
+                        <option class="option" value="cleanVillage" oninput="this.className = ''" name="task">Help in cleaning the village area</option>
+                        <option class="option" value="cleanCampus" oninput="this.className = ''" name="task">Help in cleaning the campus</option>
+                        <option class="option" value="event" oninput="this.className = ''" name="task">Conduct various events for the village people</option>
+                    </select>
+                    <label class="vtext">Choose Date:</label>
+                    <p><input type="date" oninput="this.className = ''" name="date"></p>
+                </div>
+<!-- 
+                <div class="tab name"><label class="vtext">Name:</label>
+                    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+                    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+                  </div> -->
+                  <div class="tab address"><label class="vtext">Address:</label>
+                    <p><input placeholder="Name of your Hostel..." oninput="this.className = ''" name="hostel"></p>
+                    <p><input type="number" placeholder="Your Room Number..." oninput="this.className = ''" name="room"></p>
+                  </div>
+
+                  <div class="tab contact"><label class="vtext">Contact info:</label>
+                    <!-- <p><input placeholder="E-mail(e.g.-btbti19037_diksha@banasthali.in)" oninput="this.className = ''" name="email" type="email" id="email"></p> -->
+                    <p><input placeholder="Phone(10 digit number)" oninput="this.className = ''" name="phone" type="number" id="phone"></p>
+                  </div>
+                  
+                  <div style="overflow:auto;">
+                    <div style="float:right;">
+                      <button type="button" id="prevBtn" onclick="vnextPrev(-1)">Previous</button>
+                      <button type="button" id="nextBtn" onclick="vnextPrev(1)">Next</button>
+                    </div>
+                  </div>
+                  
+                <div style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
